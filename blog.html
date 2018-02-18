@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<header class="masthead">        
+  <h1 class="masthead-title">
+    <a href="{{ site.baseurl }}/">{{ site.name }}<span>&#39;s blog</span></a>
+  </h1>
+  <nav class="masthead-nav">
+    {% for nav in site.nav %}
+    <a href="{{ nav.href }}">{{ nav.name }}</a>
+    {% endfor %}
+  </nav>
+</header>
+{% for post in site.posts  limit:1 %}
+			<div class="list-post-title">
+				{% if forloop.first and post.layout == "post" %}
+					<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+					<div class="list-post-date">{{ post.date | date: "%e %B, %Y"  }}
+					</div>
+					{{ post.content }}
+				{% else %}
+					<h2><a class="list-post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+					<div class="list-post-date">{{ post.date | date: "%e %B, %Y"  }}
+					</div>
+					{{ post.content }}
+				{% endif %}
+			</div>
+{% endfor %}
+<h3>OLDER</h3>
+<ul>
+{% for post in site.posts offset:1 %}
+	<li>
+		<span class="list-post-date"> {{ post.date | date: "%d %b"  }} </span> <a class="postlink" href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+</ul>
+
