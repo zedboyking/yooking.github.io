@@ -10,6 +10,8 @@ markdown:           rdiscount
 
 # Navigation
 nav:
+  - name:           "Project"
+    href:           "/project" 
   - name:           "About"
     href:           "/about"
 
