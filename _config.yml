@@ -12,9 +12,9 @@ markdown:           rdiscount
 nav:
   - name:            "blog"
     href:           "/blog" 
-  - name:           "Project"
+  - name:           "project"
     href:           "/project" 
-  - name:           "About"
+  - name:           "about"
     href:           "/about"
 
 # Sass

@@ -6,8 +6,15 @@ layout: default
     <a href="{{ site.baseurl }}/">{{ site.name }}<span>&#39;s blog</span></a>
   </h1>
   <nav class="masthead-nav">
-    {% for nav in site.nav %}
-    <a href="{{ nav.href }}">{{ nav.name }}</a>
+		{% for nav in site.nav %}
+		{% if nav.name == "blog" %}
+		<a href="{{ nav.href }}" style="dtext-decoration: none; color: #333;">{{ nav.name }}</a>
+		{% endif %}
+		{% endfor %}
+		{% for nav in site.nav %}
+		{% if nav.name != "blog" %}
+		<a href="{{ nav.href }}">{{ nav.name }}</a>
+		{% endif %}
     {% endfor %}
   </nav>
 </header>

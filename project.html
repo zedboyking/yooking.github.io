@@ -1,0 +1,32 @@
+---
+layout: default
+title: Project
+permalink: /project/
+---
+<header class="masthead">
+	<h1 class="masthead-title">
+    <a href="{{ site.baseurl }}/">{{ site.name }}<span>&#39;s project</span></a>
+  </h1>
+	
+	<nav class="masthead-nav">
+	
+		{% for nav in site.nav %}
+	{% if nav.name == "project" %}
+	  <a href="{{ nav.href }}" style="dtext-decoration: none; color: #333;">{{ nav.name }}</a>
+	{% endif %}
+    {% endfor %}
+    
+    {% for nav in site.nav %}
+    {% if nav.name != "project" %}
+      <a href="{{ nav.href }}">{{ nav.name }}</a>
+    {% endif %}
+    {% endfor %}
+  </nav>
+</header>
+
+<div class="project-list">
+    <li>
+        coming soon <i class="fa fa-spinner fa-pulse"></i>
+    </li>
+</div>
+
