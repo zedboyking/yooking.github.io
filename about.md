@@ -12,7 +12,7 @@ permalink: /about/
 
 [我的歌单]
 
-另外,王宝怡是shabby[^1]?
+另外,王宝怡是shabby[待补充]?
 
 [我的歌单]:/music
-[^1]:/shabby "傻逼"
+[待补充]: /shabby
