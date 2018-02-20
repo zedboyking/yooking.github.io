@@ -35,3 +35,12 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+sitemap:
+    filename: "/sitemap.xml"
+    exclude:
+        - "/feed.xml"
+        - "/style.scss"
+    include_posts:
+        - "/blog"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
