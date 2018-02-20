@@ -1,4 +1,5 @@
 ---
+layout: music
 title: music
 permalink: /music/
 ---
@@ -6,10 +7,9 @@ permalink: /music/
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>APlayer Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-<body>
+<body background="/img/radio.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.6.0/APlayer.min.js"></script>
 
     <div class="aplayer"
@@ -18,5 +18,9 @@ permalink: /music/
         data-type="playlist">
     </div>
     <script src="/music/dist/Meting.min.js"></script>
+        <p style="text-align: center;">This player is provided by following projects</p>
+        <a class="fa fa-github fa-stack-1x" href="https://github.com/metowolf/MetingJS" style="text-decoration:none;position:relative;">MetingJS</a>
+        <a class="fa fa-github fa-stack-1x" href="https://github.com/MoePlayer/APlayer" style="text-decoration:none;position:relative;">APlayer</a>
+      </span>
 </body>
 </html>

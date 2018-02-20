@@ -367,14 +367,19 @@ tbody tr:nth-child(odd) th {
   }
 }
 
-.projects-list {
-  a {
-    color: #333;
+.projects {
+  &-list{
+    a {
+      color: #333;
+      }
+  }
+  &-title{
+    text-align: center; 
   }
 }
 
 .news {
-  position: relative
+  position: relative;
 }
 
 .highlight .hll { background-color: #ffffcc }
@@ -438,4 +443,3 @@ tbody tr:nth-child(odd) th {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-
